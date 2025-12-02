@@ -17,7 +17,7 @@ def is_enabled(value, default):
 # ============================
 # Bot Information Configuration
 # ============================
-SESSION = environ.get('SESSION', 'dreamxbotz_search')   # Session name for the bot
+SESSION = environ.get('SESSION', 'Media_search')   # Session name for the bot
 API_ID = int(environ.get('API_ID', '')) # API ID from my.telegram.org
 API_HASH = environ.get('API_HASH', '')  # API Hash from my.telegram.org
 BOT_TOKEN = environ.get('BOT_TOKEN', "")    # Bot token from @BotFather
@@ -31,17 +31,17 @@ INDEX_CAPTION = bool(environ.get('SAVE_CAPTION', True)) # Save caption db when i
 #Making it false will not save caption in db SO you can save some storage space
 
 
-PICS = (environ.get('PICS', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg https://graph.org/file/5303692652d91d52180c2.jpg https://graph.org/file/425b6f46efc7c6d64105f.jpg https://graph.org/file/876867e761c6c7a29855b.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://graph.org/file/56b5deb73f3b132e2bb73.jpg https://graph.org/file/5303692652d91d52180c2.jpg https://graph.org/file/425b6f46efc7c6d64105f.jpg https://graph.org/file/876867e761c6c7a29855b.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/242b7f1b52743938d81f1.jpg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c3d8.jpg https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split()  # Fsub pic
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
 # ============================
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] # Replace with the actual admin ID(s) to add
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7413682152').split()] # Replace with the actual admin ID(s) to add
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()]  # Channel id for auto indexing (make sure bot is admin)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  # Log channel id (make sure bot is admin)
@@ -59,7 +59,7 @@ auth_channels     = environ.get("AUTH_CHANNELS", "-100")# Channels for force sub
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg')    # QR code image for payments
+QR_CODE = environ.get('QR_CODE', 'https://i.ibb.co/MktVL566/20250904-173553.jpg')    # QR code image for payments
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ɴᴏ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
@@ -74,8 +74,8 @@ STAR_PREMIUM_PLANS = {
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "")  # MongoDB URI for the database
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0") # Database name (default: cluster)
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files') # Collection name (default: dreamcinezone_files)
+DATABASE_NAME = environ.get('DATABASE_NAME', "ProBotz") # Database name (default: cluster)
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'CollectionProBotz') # Collection name (default: dreamcinezone_files)
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
