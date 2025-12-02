@@ -38,7 +38,7 @@ ppath = "plugins/*.py"
 files = glob.glob(ppath)
 
 async def dreamxbotz_start():
-    print('\n\nInitalizing DreamxBotz')
+    print('\n\nInitalizing ProBotz')
     await dreamxbotz.start()
     bot_info = await dreamxbotz.get_me()
     dreamxbotz.username = bot_info.username
